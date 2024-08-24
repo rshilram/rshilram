@@ -1,0 +1,83 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+.firstpage{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  height: 100vh;
+}
+.display1{
+  font-size: 15px;
+  
+
+}
+.display3{
+  font-size: 15px;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+}
+.display4{
+  font-family: Medium 500;
+  font-size: 40px;
+}
+
+.display2{
+  font-size: 60px;
+
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.round{
+ position: relative;
+  border-radius: 200px;
+  width: 400px;
+  height: 400px;
+ 
+}
+.imagehover1{
+  transition: 1s  ;
+
+}
+.imagehover1:hover{
+  transform: scale(1.5)
+}
+.imagehover{
+  transition: tranform 0.03s ease-in-out;
+}
+.imagehover:hover{
+  transform: scale(1.5);
+  
+}
+.display6{
+  text-decoration: none;
+  font-size: large;
+  color: white;
+}
+.card-img-top1{
+  height: 160px;
+}
+.image1{
+  height: 100px;
+  width: 100px;
+  border-radius: 80px;
+}
+.display7{
+  
+  font-weight: bold;
+  text-decoration: none;
+}
+.pagesix{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+ 
+  height: 100vh;
+}
+.display8{
+  font-family: Medium 500;
+  font-size: 40px;
+  color: white;
+}

@@ -1,0 +1,62 @@
+<form [formGroup] ="contactform "   (ngSubmit)="onsubmit()" >
+  <div class="d-flex justify-content-center ">
+    <label >First name:<br></label>
+    <input formControlName="first_name" class=" form-control" style="width: 300px;">
+  </div><br>
+  <div class="d-flex justify-content-center ">
+    <label >Last name:</label><br>
+    <input formControlName="last_name" class="form-control" style="width: 300px;">
+  </div><br>
+  <div class="d-flex justify-content-center ">
+    <label >Email ID:</label><br>
+    <input formControlName="emailid" class="form-control" style="width: 300px;">
+  </div><br>
+  <div class="d-flex justify-content-center ">
+    <label >Age:</label><br>
+    <input formControlName="age" class="form-control" style="width: 300px;">
+  </div><br> <div class="d-flex justify-content-center ">
+    <label>Genter</label>
+    <select>
+      <option value="Male" style="width: 300px">Male</option>
+      <option value="female" style="width: 300px" >female</option>
+    </select>
+  </div><br>   
+  <div class="d-flex justify-content-center ">
+    <label >Mobile Number:</label><br>
+    <input formControlName="mobile_number" class="form-control" style="width: 300px;">
+  </div><br>
+  <div class="d-flex justify-content-center ">
+    <label >Pan number:</label><br>
+    <input formControlName="pan_num" class="form-control" style="width: 300px;">
+  </div><br>
+  <div class="d-flex justify-content-center ">
+    <label >Aadhaar number:</label><br>
+    <input formControlName="aadhaar" class="form-control" style="width: 300px;">
+  </div><br>
+  <div class="d-flex justify-content-center ">
+    <label >Status:</label><br>
+    <input formControlName="start" type="checkbox" style="width: 300px;">
+  </div>
+  <div class="text-center py-5">
+    <button class="btn btn-success text-center " [disabled]="contactform.valid">Submit</button>
+
+  </div>
+  
+  
+ 
+
+</form>
+
+
+<div class="card" style="width: 18rem; " *ngFor ="let contact of contacts">
+  <div class="card-body " >
+    
+    <ul>
+      <li><h1>Members</h1></li>
+      <li >
+      First Name: {{contact.first_name}}</li>
+    <li>Last Name: {{contact.last_name}}</li><li> Age: {{contact.age}}</li>
+    <button class="btn btn-primary" (click)="getcontact(contact.id)">edit</button> <button class="btn btn-danger" (click)="deletecontact(contact.id)">delete</button>
+    </ul>
+  </div>
+</div>
